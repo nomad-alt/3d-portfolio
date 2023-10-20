@@ -27,7 +27,7 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
-import jobit from "./jobit.png";
+import campster from "./campster.png";
 import tripguide from "./tripguide.png";
 import threads from "./threads.png";
 
@@ -58,7 +58,7 @@ export {
   starbucks,
   tesla,
   carrent,
-  jobit,
+  campster,
   tripguide,
   threads,
 };

@@ -16,7 +16,7 @@ import {
     figma,
     docker,
     threads,
-    jobit,
+    campster,
     tripguide,
     threejs,
 } from "../assets";
@@ -42,7 +42,7 @@ const services = [
         icon: web,
     },
     {
-        title: "React Native Developer",
+        title: "React Developer",
         icon: mobile,
     },
     {
@@ -186,28 +186,28 @@ const projects = [
             },
         ],
         image: threads,
-        source_code_link: "https://github.com/nomad-alt/threads",
+        source_code_link: "https://threads-chi-three.vercel.app/",
     },
     {
-        name: "Job IT",
+        name: "Campster",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "Responsive Modern UI/UX Website, React.js, Next.js 13, Tailwind CSS",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "nextjs",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "tailwind",
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: campster,
+        source_code_link: "https://campster-nine.vercel.app",
     },
     {
         name: "Trip Guide",
@@ -232,4 +232,4 @@ const projects = [
     },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
