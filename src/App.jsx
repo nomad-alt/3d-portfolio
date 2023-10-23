@@ -1,4 +1,4 @@
-import { BrowserRouter, createBrowserRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 

@@ -17,8 +17,8 @@ import {
     docker,
     threads,
     campster,
-    tripguide,
     threejs,
+    product,
 } from "../assets";
 
 export const navLinks = [
@@ -168,6 +168,27 @@ const experiences = [
 
 const projects = [
     {
+        name: "3D Product Website",
+        description:
+            "AI-Powered 3D Website Using React | Three JS | Tailwind CSS",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "threejs",
+                color: "green-text-gradient",
+            },
+            {
+                name: "tailwind css",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: product,
+        source_code_link: "https://threejsproducts.shop",
+    },
+    {
         name: "Threads App",
         description:
             "Threads is a modern discussion platform, inspired by the popular Threads app. Engage with communities, share your insights, and keep up with the topics that matter most to you.",
@@ -184,9 +205,21 @@ const projects = [
                 name: "mongodb",
                 color: "pink-text-gradient",
             },
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "tailwindcss",
+                color: "green-text-gradient",
+            },
+            {
+                name: "nodejs",
+                color: "pink-text-gradient",
+            },
         ],
         image: threads,
-        source_code_link: "https://threads-chi-three.vercel.app/",
+        source_code_link: "https://github.com/nomad-alt/threads",
     },
     {
         name: "Campster",
@@ -205,30 +238,13 @@ const projects = [
                 name: "tailwind",
                 color: "pink-text-gradient",
             },
+            {
+                name: "typescript",
+                color: "green-text-gradient",
+            },
         ],
         image: campster,
         source_code_link: "https://campster-nine.vercel.app",
-    },
-    {
-        name: "Trip Guide",
-        description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-        tags: [
-            {
-                name: "nextjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "supabase",
-                color: "green-text-gradient",
-            },
-            {
-                name: "css",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
     },
 ];
 

@@ -28,7 +28,7 @@ import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import campster from "./campster.png";
-import tripguide from "./tripguide.png";
+import product from "./product.png";
 import threads from "./threads.png";
 
 export {
@@ -59,6 +59,6 @@ export {
   tesla,
   carrent,
   campster,
-  tripguide,
+  product,
   threads,
 };
