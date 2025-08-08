@@ -15,10 +15,10 @@ import {
     git,
     figma,
     docker,
-    threads,
-    campster,
+    java,
+    todo,
     threejs,
-    product,
+    eco,
 } from "../assets";
 
 export const navLinks = [
@@ -168,16 +168,16 @@ const experiences = [
 
 const projects = [
     {
-        name: "3D Product Website",
+        name: "EcoConnect-Beta",
         description:
-            "AI-Powered 3D Website Using React | Three JS | Tailwind CSS",
+            "An app that let’s the user explore both local and global climate organizations. It could also provide information on climate action initiatives and upcoming events.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "threejs",
+                name: "javascript",
                 color: "green-text-gradient",
             },
             {
@@ -185,57 +185,57 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: product,
-        source_code_link: "https://threejsproducts.shop",
+        image: eco,
+        source_code_link: "https://github.com/nomad-alt/EcoConnect-Beta",
     },
     {
-        name: "Threads App",
+        name: "Database with Java",
         description:
-            "Threads is a modern discussion platform, inspired by the popular Threads app. Engage with communities, share your insights, and keep up with the topics that matter most to you.",
+            "Smart Clinic Management System",
         tags: [
             {
-                name: "nextjs",
+                name: "java",
                 color: "blue-text-gradient",
             },
             {
-                name: "typescipt",
+                name: "javascript",
                 color: "green-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "spring boot",
                 color: "pink-text-gradient",
             },
             {
-                name: "react",
+                name: "mysql",
                 color: "blue-text-gradient",
             },
             {
-                name: "tailwindcss",
+                name: "mongo db",
                 color: "green-text-gradient",
             },
             {
-                name: "nodejs",
+                name: "jjwt",
                 color: "pink-text-gradient",
             },
         ],
-        image: threads,
-        source_code_link: "https://github.com/nomad-alt/threads",
+        image: java,
+        source_code_link: "https://github.com/nomad-alt/java-database-capstone",
     },
     {
-        name: "Campster",
+        name: "Todo list with firebase",
         description:
-            "Responsive Modern UI/UX Website, React.js, Next.js 13, Tailwind CSS",
+            "A simple to do list using React and Firebase.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "nextjs",
+                name: "javascript",
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "firebase",
                 color: "pink-text-gradient",
             },
             {
@@ -243,8 +243,8 @@ const projects = [
                 color: "green-text-gradient",
             },
         ],
-        image: campster,
-        source_code_link: "https://campster-nine.vercel.app",
+        image: todo,
+        source_code_link: "https://github.com/nomad-alt/react-todo-list-firebase",
     },
 ];
 
