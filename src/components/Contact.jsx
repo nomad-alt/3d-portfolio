@@ -1,12 +1,12 @@
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+const FORM_ENDPOINT = "https://formsubmit.co/ajax/emil@lindelldev.se";
 
 const Contact = () => {
   const formRef = useRef();
@@ -28,45 +28,45 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    if (loading) return;
+
     setLoading(true);
 
-    // service_an2ou7r
-    // template_96rozzd
-    // I6wOQHqkNYozo_1O2
-
-    emailjs
-      .send(
-        'service_an2ou7r',
-        'template_96rozzd',
-        {
-          from_name: form.name,
-          to_name: "Emil Lindell",
-          from_email: form.email,
-          to_email: "emil@lindelldev.com",
+    try {
+      const response = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
           message: form.message,
-        },
-        'I6wOQHqkNYozo_1O2'
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+        }),
+      });
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
+      const data = await response.json().catch(() => null);
 
-          alert("Ahh, something went wrong. Please try again.");
-        }
-      );
+      if (!response.ok || data?.success === "false") {
+        throw new Error(data?.message || "Form submission failed");
+      }
+
+      alert("Thank you. I will get back to you as soon as possible.");
+
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error(error);
+      alert("Ahh, something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (

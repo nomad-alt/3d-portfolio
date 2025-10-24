@@ -21,15 +21,9 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
-import campster from "./campster.png";
-import product from "./product.png";
-import threads from "./threads.png";
+import eco from "./eco.png";
+import java from "./java.png";
+import todo from "./todo.png";
 
 export {
   logo,
@@ -53,12 +47,7 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  campster,
-  product,
-  threads,
+  eco,
+  java,
+  todo
 };
